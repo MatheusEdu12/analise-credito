@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  jupyter:
+    build: .
+    container_name: analise_credito_jupyter
+    volumes:
+      - .:/app
+    ports:
+      - "8888:8888"
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
