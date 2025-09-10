@@ -7,3 +7,5 @@ matplotlib
 seaborn
 jupyter
 psycopg2-binary
+optuna
+imbalanced-learn

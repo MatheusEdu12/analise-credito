@@ -7,7 +7,10 @@ ENV PYTHONUNBUFFERED=1
 # Diretório de trabalho
 WORKDIR /app
 
-# Copiar requirements.txt e instalar dependências
+# Atualizar e instalar dependências do sistema
+RUN apt-get update && apt-get install -y libgomp1 && rm -rf /var/lib/apt/lists/*
+
+# Copiar requirements.txt e instalar dependências Python
 COPY requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
