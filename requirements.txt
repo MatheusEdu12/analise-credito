@@ -9,3 +9,4 @@ jupyter
 psycopg2-binary
 optuna
 imbalanced-learn
+statsmodels
