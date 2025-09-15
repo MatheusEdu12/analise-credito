@@ -7,13 +7,14 @@ O objetivo principal é identificar clientes **adimplentes** (`DEFAULT=0`) para 
 ## Estrutura do Projeto
 
 data/
+
   ├── raw/          # Dados originais
+  
   └── processed/    # Dados tratados e escalonados
+  
 models/             # Modelos treinados
+
 notebooks/          # Notebooks de exploração, pré-processamento, EDA, modelagem e avaliação
-requirements.txt
-Dockerfile
-docker-compose.yml
 
 ## Execução com Docker
 ```
